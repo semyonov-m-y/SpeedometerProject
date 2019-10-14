@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue_800"
+    android:paddingBottom="@dimen/element_margin"
+    android:paddingLeft="@dimen/element_margin"
+    android:paddingRight="@dimen/element_margin"
+    android:paddingTop="@dimen/element_margin">
+
+    <ru.semenovmy.learning.speedometerproject.SpeedometerView
+        android:id="@+id/speedometer_view"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/layout_height"
+        android:layout_marginBottom="@dimen/element_margin"
+        custom:backgroundColorOrange="@color/orange_500"
+        custom:backgroundColorYellow="@color/yellow"
+        custom:backgroundColorGreen="@color/green_500"
+        custom:digitsColor="@color/black"
+        custom:speedArrowColor="@color/red_700"
+        />
+
+    <TextView
+        android:id="@+id/speed_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/speedometer_view"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        android:shadowColor="@color/gray_50"
+        android:shadowDx="20"
+        android:shadowDy="20"
+        android:shadowRadius="5"
+        />
+
+</RelativeLayout>

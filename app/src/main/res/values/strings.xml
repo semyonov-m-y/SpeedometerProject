@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Speedometer</string>
+    <string name="slowing_down">Slowing down...</string>
+</resources>
